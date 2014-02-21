@@ -1,0 +1,175 @@
+body {
+  background: #eee;
+  font-family: "helvetica-neue", helvetica, arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "helvetica-neue", helvetica, arial, sans-serif;
+  color: #444;
+}
+
+#logo {
+  text-transform: uppercase;
+}
+
+#container {
+  background: #fff;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 0;
+  max-width: 1000px;
+}
+
+section {
+  border: 0;
+}
+
+#loginActions, #votingActions {
+  background: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 0;
+}
+#loginActions input, #votingActions input {
+  width: 100%;
+  font-size: 18px;
+  margin-left: 0;
+}
+#loginActions input[type="button"], #loginActions input[type="submit"], #votingActions input[type="button"], #votingActions input[type="submit"] {
+  border: none;
+  transition: all .1s ease-in-out;
+  background: #2c3e50;
+  padding: 10px 20px;
+  width: auto;
+  float: left;
+}
+#loginActions input[type="button"]:last-child, #loginActions input[type="submit"]:last-child, #votingActions input[type="button"]:last-child, #votingActions input[type="submit"]:last-child {
+  margin-right: 0;
+}
+#loginActions input[type="button"]:hover, #loginActions input[type="submit"]:hover, #votingActions input[type="button"]:hover, #votingActions input[type="submit"]:hover {
+  background: #e5447c;
+  border: none;
+}
+#loginActions input[type="button"]#btnReset, #loginActions input[type="submit"]#btnReset, #votingActions input[type="button"]#btnReset, #votingActions input[type="submit"]#btnReset {
+  float: right;
+}
+
+#votingResult.reveal #votingActions #btnReveal {
+  border: none;
+  background: #e5447c;
+  padding: 10px 20px;
+  width: auto;
+}
+#votingResult.reveal #votingActions #btnReveal:hover {
+  background: #e5447c;
+  border: none;
+}
+
+#votingResult.reveal #votingActions #btnReset {
+  border: none;
+  background: #2c3e50;
+  padding: 10px 20px;
+  width: auto;
+}
+#votingResult.reveal #votingActions #btnReset:hover {
+  background: #e5447c;
+  border: none;
+}
+
+input {
+  font-family: "helvetica-neue", helvetica, arial, sans-serif;
+  display: block;
+  width: 100%;
+}
+input[type="text"] {
+  margin: 0;
+}
+input[type="text"]:focus {
+  border: 1px solid #e5447c;
+}
+
+.button {
+  width: auto;
+  float: left;
+}
+
+footer {
+  font-family: "helvetica-neue", helvetica, arial, sans-serif;
+  text-shadow: none;
+  color: #777;
+}
+footer a {
+  color: #66B360;
+}
+
+#clients {
+  padding-top: 2em;
+  clear: both;
+}
+
+#playersHand .card {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+#playersHand .card .card-text {
+  font-family: "Exo 2", sans-serif;
+}
+#playersHand .card:hover .card-text {
+  color: #e5447c;
+}
+
+#clients .nickname {
+  float: none;
+  width: 100%;
+  text-align: center;
+  letter-spacing: none;
+  font-size: 16px;
+  transition: all .5s ease-in-out;
+}
+
+#clients .vote-wrap {
+  float: none;
+  width: auto;
+  text-align: center;
+  padding: 0;
+}
+#clients .vote-wrap .vote {
+  color: #e5447c;
+  font-weight: bold;
+  font-size: 5em;
+  font-family: "Exo 2", sans-serif;
+}
+
+#clients .client {
+  height: 15em;
+  width: 11em;
+  font-family: "Exo 2", sans-serif;
+}
+
+#clients .client .back {
+  text-align: center;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+  background: url("../gfx/card-back.jpg") !important;
+}
+
+#clients .client .front {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+#clients .client .back .nickname {
+  text-align: center;
+}
+
+#clients .client.voted .front .nickname,
+#clients .client.voted .back .nickname {
+  color: #e5447c;
+  font-size: 24px;
+}
+
+html.cssreflections.csstransforms #playersHand .card.selected {
+  background: #2c3e50;
+  border: none;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25);
+}

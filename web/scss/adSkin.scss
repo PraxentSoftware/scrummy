@@ -1,0 +1,191 @@
+@import "compass/css3/box-shadow";
+
+$helvetica: "helvetica-neue", helvetica, arial, sans-serif;
+$exo: "Exo 2", sans-serif;
+$rubine: #E5447C;
+$navy: #2C3E50;
+
+body {
+	background: #eee;
+	font-family: $helvetica;
+	-webkit-font-smoothing: antialiased;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: "helvetica-neue", helvetica, arial, sans-serif;
+	color: #444;
+}
+
+#logo {
+	text-transform: uppercase;
+}
+
+#container {
+	background: #fff;
+	@include box-shadow(none);
+	border: 0;
+	max-width: 1000px;
+}
+
+section {
+	border: 0;
+}
+
+#loginActions, #votingActions {
+	background: none;
+	@include box-shadow(none);
+	border: 0;
+
+	input {
+		width: 100%;
+		font-size: 18px;
+		margin-left: 0;
+	}
+
+	input[type="button"],input[type="submit"] {
+		border: none;
+		transition: all .1s ease-in-out;
+		background: $navy;
+		padding: 10px 20px;
+		width: auto;
+		float: left;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		&:hover {
+			background: $rubine;
+			border: none;
+		}
+
+		&#btnReset {
+			float: right;
+		}
+	}
+}
+
+#votingResult.reveal #votingActions #btnReveal {
+	border: none;
+	background: $rubine;
+	padding: 10px 20px;
+	width: auto;
+
+	&:hover {
+		background: $rubine;
+		border: none;
+	}
+}
+
+#votingResult.reveal #votingActions #btnReset {
+	border: none;
+	background: $navy;
+	padding: 10px 20px;
+	width: auto;
+
+	&:hover {
+		background: $rubine;
+		border: none;
+	}
+}
+
+input {
+	font-family: $helvetica;
+	display: block;
+	width: 100%;
+
+	&[type="text"] {
+		margin: 0;
+
+ 	 	&:focus {
+  	  border: 1px solid $rubine;
+  	}
+	}
+}
+
+.button {
+	width: auto;
+	float: left;
+}
+
+footer {
+	font-family: $helvetica;
+	text-shadow: none;
+	color: #777;
+
+	a {
+		color: #66B360;
+	}
+}
+
+#clients {
+	padding-top: 2em;
+	clear: both;
+}
+
+#playersHand .card {
+	box-shadow: 0 2px 4px rgba(0,0,0,.5);
+
+	.card-text {
+		font-family: $exo;
+	}
+
+	&:hover .card-text {
+		color: $rubine;
+	}
+}
+
+#clients .nickname {
+	float: none;
+	width: 100%;
+	text-align: center;
+	letter-spacing: none;
+	font-size: 16px;
+	transition: all .5s ease-in-out;
+}
+
+#clients .vote-wrap {
+	float: none;
+	width: auto;
+	text-align: center;
+	padding: 0;
+
+	.vote {
+		color: $rubine;
+		font-weight: bold;
+		font-size: 5em;
+		font-family: $exo;
+	}
+}
+
+#clients .client {
+	height: 15em;
+	width: 11em;
+	font-family: $exo;
+}
+
+#clients .client .back {
+	text-align: center;
+	box-shadow: 0 0 2px rgba(0,0,0,.25);
+	background: url("../gfx/card-back.jpg") !important;
+}
+
+#clients .client .front {
+	box-shadow: 0 0 30px rgba(0,0,0,.10);
+}
+
+#clients .client .back .nickname {
+	text-align: center;
+}
+
+#clients .client.voted .front .nickname,
+#clients .client.voted .back .nickname {
+	color: $rubine;
+	font-size: 24px;
+}
+
+html.cssreflections.csstransforms #playersHand .card.selected {
+	background: $navy;
+	border: none;
+	box-shadow: 0 10px 10px rgba(0,0,0,.25);
+}
