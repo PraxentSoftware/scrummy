@@ -1,8 +1,7 @@
 # scrummy &ndash; A Scrum Planning Game
 
 scrummy is a [card game for scrum story point estimation][poker]. Originally forked from
-[simewn's project][simewn] by [tsmith512][], the Web Chefs of [Four Kitchens][4K]
-have continued development to include several new features and enhancements:
+[simewn's project][simewn] by [tsmith512][], and forked from our friends at [Four Kitchens][4K].
 
 ## Features
 
